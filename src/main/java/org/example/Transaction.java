@@ -1,6 +1,5 @@
 package org.example;
 
-import javax.xml.stream.Location;
 import java.time.LocalDateTime;
 
 public class Transaction {
@@ -10,11 +9,10 @@ public class Transaction {
     private LocalDateTime time;
     private TransactionsStatus status;
 
-    public Transaction(String id, TransactionType type, double amount, LocalDateTime time, TransactionsStatus status) {
+    public Transaction(String id, TransactionType type, double amount, TransactionsStatus status) {
         this.id = id;
         this.type = type;
         this.amount = amount;
-        this.time = time;
         this.status = status;
     }
 
